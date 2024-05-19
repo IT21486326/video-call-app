@@ -3,11 +3,20 @@
 
 # Contributors
 IT21486326 - Chandrasiri D K W G G T
+
 IT21224720 - Kavithma K A S
 
-# How to use this webapp
+# How to run this project
+
+1. Clone the project
 ```
-git clone <[video-call-app](https://github.com/IT21486326/video-call-app.git)>
-npm install
+git clone https://github.com/IT21486326/video-call-app.git
+```
+2. Install Node Modules
+```
+npm i
+``` 
+3. Run node application
+```
 npm run dev
 ```
