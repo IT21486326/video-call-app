@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SSS Assignment</title>
-  </head>
-  <body>
-    <h2>1. Start your Webcam</h2>
-    <div class="videos">
-      <span>
-        <h3>Local Stream</h3>
-        <video id="webcamVideo" autoplay playsinline></video>
-      </span>
-      <span>
-        <h3>Remote Stream</h3>
-        <video id="remoteVideo" autoplay playsinline></video>
-      </span>
 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSS Assignment</title>
+</head>
 
+<body>
+
+  <div class="header">
+    <div class="title-container">
+      <h1 class="header-title">Stream Connect</h1>
     </div>
+    <div class="ac-container">
+      <input id="callInput" class="callInput" placeholder="Enter your call id" />
+      <button id="answerButton" class="btn success" disabled>Answer</button>
+    </div>
+  </div>
+  
+  <div class="videos">
+    <div class="control">
+      <div>
+        <video id="webcamVideo" class="webcamVideo" autoplay playsinline></video>
+      </div>
+      <div>
+        <button id="webcamButton" class="btn primary">Start Webcam</button>
+        <button id="callButton" class="btn primary" disabled>Create Call</button>
+      </div>
+      <div>
+        <button id="hangupButton" class="hangup-btn danger" disabled>Hangup</button>
+      </div>
+    </div>
+    <span>
+      <video id="remoteVideo" class="remoteVideo" autoplay playsinline></video>
+    </span>
+  </div>
 
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Create a new Call</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
+  <script type="module" src="/main.js"></script>
 
-    <h2>3. Join a Call</h2>
-    <p>Answer the call from a different browser window or device</p>
-    
-    <input id="callInput" />
-    <button id="answerButton" disabled>Answer</button>
+</body>
 
-    <h2>4. Hangup</h2>
-
-    <button id="hangupButton" disabled>Hangup</button>
-
-    <script type="module" src="/main.js"></script>
-
-  </body>
 </html>
