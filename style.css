@@ -1,23 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 body {
-  font-family: 'Syne Mono', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
   text-align: center;
   color: #2c3e50;
-  margin: 80px 10px;
+  /* margin: 80px 10px; */
+  margin: 0;
+  padding: 0;
 }
 
-video {
+/* video {
   width: 40vw;
   height: 30vw;
   margin: 2rem;
-  background: #109b5f;
+  background: #25d366;
+} */
+
+video {
+  border-radius: 10px;
+}
+
+.webcamVideo{
+  width: 20vw;
+  height: 15vw;
+  margin: 2rem;
+  background-color: #25d366;
+}
+
+.remoteVideo{
+  width: 50vw;
+  height: 37.5vw;
+  margin: 2rem;
+  background-color: #25d366;
 }
 
 .videos {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header{
+  display: flex;
+  background-color: #075e54;
+  height: 100px;
+}
+
+.title-container{
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.ac-container{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.header-title{
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.callInput{
+  width: 250px;
+  height: 42px;
+  padding-left: 20px;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+.control{
+  display: block;
+}
+
+.btn {
+  padding: 15px 30px;
+  color:#075e54;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #25d366;
+  cursor: pointer;
+  /* transition: fa; */
+}
+
+.hangup-btn{
+  padding: 15px 115px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.hangup-btn:hover {
+  color: white;
+  background-color: rgb(146, 0, 0);
+  cursor: pointer;
+}
+
+.danger {
+  background-color: rgb(201, 0, 0);
+  color: white;
+}
+
+.success{
+  background-color:#25d366;
+  color: white;
+}
+
+.primary{
+  background-color: #075e54;
+  color: white;
 }
